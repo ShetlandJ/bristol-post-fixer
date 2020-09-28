@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+    "name": "Bristol Post Reader",
+    "short_name": "BPReaer",
+    "description": "Helps Bristolians read the Bristol Post more easily",
+    "author": "james@jastewart.co.uk",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.bristolpost.co.uk/news/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
